@@ -1,0 +1,34 @@
+D_help                         pass
+D_nop_hlt                      pass
+D_nop_hlt_debug                pass
+C_irmovq                       pass
+C_irmovq_debug                 pass
+C_opq                          pass
+C_opq_debug                    pass
+B_pushpop                      pass
+B_pushpop_debug                pass
+B_memreg                       pass
+B_memreg_debug                 pass
+B_simple                       pass
+B_simple_entry                 pass
+B_func_debug                   pass
+A_cmov_debug                   pass
+A_cjmp_debug                   pass
+A_opq_of_debug                 pass
+A_movflags_debug               pass
+A_iotrap_char_debug            pass
+A_iotrap_dec_debug             FAIL (see outputs/A_iotrap_dec_debug.diff for details)
+A_iotrap_dec_bad               FAIL (see outputs/A_iotrap_dec_bad.diff for details)
+A_iotrap_str_debug             pass
+A_iotrap_escaped_string        FAIL (see outputs/A_iotrap_escaped_string.diff for details)
+A_pushpop_rsp_debug            pass
+A_bad_addr                     pass
+A_bad_addr_debug               pass
+A_bad_insn                     pass
+A_bad_insn_debug               pass
+A_bad_nostack                  pass
+A_missing_file                 pass
+A_both_flags                   pass
+A_extra_params                 pass
+A_unaligned                    pass
+No memory leak found.

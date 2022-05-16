@@ -1,0 +1,12 @@
+--- outputs/A_iotrap_escaped_string.txt	2021-12-10 15:13:18.516140477 -0500
++++ expected/A_iotrap_escaped_string.txt	2021-10-17 18:46:30.000000000 -0400
+@@ -1,5 +1,8 @@
+ Beginning execution at 0x0100
+-hello!Y86 CPU state:
++hello!
++ab	c
++'str\ing'
++Y86 CPU state:
+   %rip: 000000000000010d   flags: Z0 S0 O0     HLT
+   %rax: 0000000000000000    %rcx: 0000000000000000
+   %rdx: 0000000000000000    %rbx: 0000000000000000

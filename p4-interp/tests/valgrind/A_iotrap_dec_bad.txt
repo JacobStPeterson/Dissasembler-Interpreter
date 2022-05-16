@@ -1,0 +1,32 @@
+==3908137== Memcheck, a memory error detector
+==3908137== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3908137== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==3908137== Command: ../y86 -e inputs/iotrap_dec.o
+==3908137== 
+Beginning execution at 0x0100
+Y86 CPU state:
+  %rip: 0000000000000119   flags: Z0 S0 O0     HLT
+  %rax: 0000000000000000    %rcx: 0000000000000000
+  %rdx: 0000000000000000    %rbx: 0000000000000000
+  %rsp: 0000000000000000    %rbp: 0000000000000000
+  %rsi: 0000000000000300    %rdi: 0000000000000308
+   %r8: 0000000000000000     %r9: 0000000000000000
+  %r10: 0000000000000000    %r11: 0000000000000000
+  %r12: 0000000000000000    %r13: 0000000000000000
+  %r14: 0000000000000000
+Total execution count: 7
+==3908137== 
+==3908137== HEAP SUMMARY:
+==3908137==     in use at exit: 472 bytes in 1 blocks
+==3908137==   total heap usage: 6 allocs, 5 frees, 21,152 bytes allocated
+==3908137== 
+==3908137== LEAK SUMMARY:
+==3908137==    definitely lost: 0 bytes in 0 blocks
+==3908137==    indirectly lost: 0 bytes in 0 blocks
+==3908137==      possibly lost: 0 bytes in 0 blocks
+==3908137==    still reachable: 472 bytes in 1 blocks
+==3908137==         suppressed: 0 bytes in 0 blocks
+==3908137== Rerun with --leak-check=full to see details of leaked memory
+==3908137== 
+==3908137== For lists of detected and suppressed errors, rerun with: -s
+==3908137== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
